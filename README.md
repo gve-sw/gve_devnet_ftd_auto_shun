@@ -43,6 +43,15 @@ threshold = 2
 # unit of time in days till unshun command will be sent
 delay = 2
 ```
+Make sure to comment/uncomment the import observer line based on the OS this will be hosted on
+
+```python
+# linux based files to observe
+from watchdog.observers import Observer
+
+# windows based files to observe 
+#from watchdog.observers.polling import PollingObserver as Observer
+```
 
 ## Usage
 Install python package depedencies:

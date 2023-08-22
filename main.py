@@ -15,7 +15,13 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 import re
 import heapq
+
+# linux based files to observe
 from watchdog.observers import Observer
+
+# windows based files to observe 
+#from watchdog.observers.polling import PollingObserver as Observer
+
 from watchdog.events import FileSystemEventHandler
 from ftd_connector import ftd_connection
 import config
